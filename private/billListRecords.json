@@ -1,0 +1,23 @@
+[
+  {
+    "itemName": "0012345 商品AAA",
+    "dateOfDelivery": "2023-12-01",
+    "unitPrice": "100,000",
+    "amount": 1,
+    "price": "100,000"
+  },
+  {
+    "itemName": "0012346 商品BBB",
+    "dateOfDelivery": "2023-12-05",
+    "unitPrice": "200,000",
+    "amount": 1,
+    "price": "200,000"
+  },
+  {
+    "itemName": "0012347 商品CCC",
+    "dateOfDelivery": "2023-12-10",
+    "unitPrice": "350,000",
+    "amount": 2,
+    "price": "700,000"
+  }
+]
