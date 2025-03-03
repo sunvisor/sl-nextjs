@@ -35,14 +35,14 @@ export function makePdf() {
     fonts,
   });
   // attach stream to PDF drawer
-  drawer.document.open(stream);
+  drawer.open(stream);
   // draw
   drawer.draw({
     values,
     listRecords,
   });
   // close
-  drawer.document.close();
+  drawer.close();
 
   return stream as unknown as ReadableStream;
 }
