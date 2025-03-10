@@ -7,8 +7,7 @@
 import type { Metadata } from 'next'
 import React from 'react';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
-import theme from '@/app/theme';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline } from '@mui/material';
 
 export const metadata: Metadata = {
   title: 'Super Leopard',
@@ -20,13 +19,11 @@ export default function RootLayout({ children }: {
 }) {
   return (
     <html lang="ja">
-    <body style={{ height: '100vh' }}>
+    <body style={{ height: '100vh', overflow: 'hidden' }}>
     <AppRouterCacheProvider>
-      <ThemeProvider theme={theme}>
-        <CssBaseline>
-          {children}
-        </CssBaseline>
-      </ThemeProvider>
+      <CssBaseline>
+        {children}
+      </CssBaseline>
     </AppRouterCacheProvider>
     </body>
     </html>
